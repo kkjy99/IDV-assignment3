@@ -1,0 +1,95 @@
+/* Heading 1 Style */
+h1 {
+    font-family: Cambria;
+    text-align: center;
+    background-color: rgb(174, 187, 228);
+    padding: 10px;
+}
+/* Heading 2 Style */
+h2 {
+    font-family: Cambria;
+    background-color: rgb(217, 225, 250);
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+/* Heading 3 Style */
+h3 {
+    font-family: Cambria;
+    text-align: justify;
+}
+/* Heading 4 Style */
+h4 {
+    font-family: Cambria;
+    text-align: center;
+}
+select {
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid;
+}
+.chart {
+    display: flex;
+    flex-direction: row;
+    font-family: Cambria;
+}
+#chart1 {
+    display: flex;
+}
+#chart2 {
+    display: flex;
+}
+.tooltip {
+    position: absolute;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+header {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(174, 187, 228);
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(174, 187, 228);
+}
+ul {
+    font-size: 17px;
+    text-align: justify;
+}
+li {
+    font-family: Cambria;
+}
+/* Style content of collapsible button */
+.collapsible {
+    background-color: rgb(217, 225, 250);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    font-family: Cambria;
+    font-weight: bold;
+}
+/* Style bg color of button when hovering over */ 
+.active, .collapsible:hover {
+    background-color: rgb(204, 212, 235);
+}
+/* Style content within collapsible window */  
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
