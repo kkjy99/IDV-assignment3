@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title> IDV 2025 Assignment 3 </title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "https://d3js.org/d3.v7.min.js"> </script>
+    </head>
+
+    <body>
+        <header>
+            <h1> Understanding Data, Framing Hypothesis, and Execution </h1>
+        </header>
+
+        <div class = "hypothesis">
+            <h2 style = "text-align: center; background-color: rgb(230, 230, 230);">
+                Inquiry of Interest
+            </h2>
+
+            <h3>
+                How is the population within Pasir Ris planning area changing over the years from 2000 to 2020?
+                <br>
+                What are some similarities and differences between the change in Pasir Ris compared to the whole of Singapore?
+            </h3>
+        </div>
+
+        <div class = "chart">
+            <!-- Chart 1 -->
+            <div id = "select1" class = "custom-select" style = "width: 180px;">
+                <label for = "yearSelect" style = "padding: 3px">
+                    <strong> Select a year:</strong>
+                </label>
+                <select id = "yearSelect">
+                    <option value = "0">2000</option>
+                    <option value = "1">2010</option>
+                    <option value = "2">2020</option>
+                </select>
+            </div>
+
+            <div id = "tooltip" class = "tooltip"></div>
+
+            <div id = "chart1"></div>
+
+            <!-- Chart 2 -->
+            <div id = "chart2"></div>
+
+        </div>
+
+        <div class = "findings">
+            <button type="button" class="collapsible">Key Findings</button>
+                <div class="content">
+                    <br>
+                    <strong style = "font-family: Cambria; font-size: 18px;"> Ageing population </strong>
+                    <ul>
+                        <li style = "margin-top: 10px;">
+                            This trend can be observed at <strong> both the planning area and national level</strong>, from the <strong> constrictive pattern </strong>of the 
+                            population pyramid.
+                        </li>
+                        <li style = "margin-top: 10px;">
+                            This trend is characterized by <strong> declining birth rates (shrinking base) </strong> and <strong> longer life expectancies (widening top)</strong>.
+                        </li>
+                        <li style = "margin-top: 10px;">
+                            The trend is <strong> less pronounced at the national level</strong>, from the way the bulges of the population pyramid are <strong> less prominent </strong>.
+                        </li>
+                    </ul>
+                    <br>
+                    <strong style = "font-family: Cambria; font-size: 18px;"> Population spread over the years</strong>
+                    <ul>
+                        <li style = "margin-top: 10px;">
+                            The <strong> constrictive pattern </strong> of the <strong>population pyramid of Pasir Ris stays the same</strong>, while on the <strong>national level, the initial constrictive
+                            pattern has evolved and become less prominent</strong>. 
+                        </li>
+                        <li style = "margin-top: 10px;">
+                            The <strong> estimated median age changes over the years (as expected) </strong>, and while the <strong> median age group are the same in both Pasir Ris and on the national level</strong>, 
+                            the <strong> estimated median age is higher on the national level</strong>.
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <br>
+
+        <script src = "script.js">
+
+        </script>
+
+        <div>
+            <h3> Population datasets retrieved from: 
+                <a href = "https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data"> Resident Population 2000</a>,
+                <a href = "https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data"> Resident Population 2010</a> and
+                <a href = "https://data.gov.sg/datasets?page=1&query=Resident+Population+by+Planning+Area/Subzone+of+Residence,+Age+Group+and+Sex+(Census+of+Population+2020)&resultId=d_d95ae740c0f8961a0b10435836660ce0"> Resident Population 2020</a>.
+                
+            </h3>
+            
+
+        </div>
+
+        <footer> 
+            <h4> 
+                Data retrieved from 
+                <a href = "https://data.gov.sg/"> data.gov.sg </a> and
+                <a href = "https://www.singstat.gov.sg/"> singstat.gov.sg </a>.  
+            </h4>
+
+            <h4> 
+                02.526 IDV - Assignment 3 | By kkjy99
+            </h4>
+        </footer>
+
+    </body>
+
+</html>
+</html>
